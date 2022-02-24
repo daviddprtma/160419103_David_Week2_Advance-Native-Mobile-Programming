@@ -26,5 +26,10 @@ class mainFragment : Fragment() {
             val action = mainFragmentDirections.actionGameFragment(playerName);
             Navigation.findNavController(it).navigate(action);
         }
+
+        btnOptions.setOnClickListener {
+            val action = mainFragmentDirections.actionOptionFragment();
+            Navigation.findNavController(it).navigate(action);
+        }
     }
 }
